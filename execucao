@@ -1,0 +1,69 @@
+// Interface para Reprodutor Musical
+public interface ReprodutorMusical {
+    void reproduzirMusica(String musica);
+    void pausarMusica();
+    void pararMusica();
+}
+
+// Interface para Aparelho Telefônico
+public interface AparelhoTelefonico {
+    void fazerChamada(String numero);
+    void atenderChamada();
+    void encerrarChamada();
+}
+
+// Interface para Navegador na Internet
+public interface NavegadorInternet {
+    void abrirPagina(String url);
+    void fecharPagina();
+    void atualizarPagina();
+}
+
+// Implementação da classe Iphone
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+
+    @Override
+    public void reproduzirMusica(String musica) {
+        System.out.println("Reproduzindo música: " + musica);
+    }
+
+    @Override
+    public void pausarMusica() {
+        System.out.println("Música pausada.");
+    }
+
+    @Override
+    public void pararMusica() {
+        System.out.println("Música parada.");
+    }
+
+    @Override
+    public void fazerChamada(String numero) {
+        System.out.println("Fazendo chamada para o número: " + numero);
+    }
+
+    @Override
+    public void atenderChamada() {
+        System.out.println("Atendendo chamada.");
+    }
+
+    @Override
+    public void encerrarChamada() {
+        System.out.println("Chamada encerrada.");
+    }
+
+    @Override
+    public void abrirPagina(String url) {
+        System.out.println("Abrindo página: " + url);
+    }
+
+    @Override
+    public void fecharPagina() {
+        System.out.println("Página fechada.");
+    }
+
+    @Override
+    public void atualizarPagina() {
+        System.out.println("Página atualizada.");
+    }
+}
