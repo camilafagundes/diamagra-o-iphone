@@ -1,0 +1,42 @@
+Diagrama de Classes UML (Texto)
+
++--------------------+
+|  ReprodutorMusical |
++--------------------+
+| + reproduzirMusica(musica: String) : void |
+| + pausarMusica() : void                  |
+| + pararMusica() : void                   |
++--------------------+
+
++--------------------+
+| AparelhoTelefonico |
++--------------------+
+| + fazerChamada(numero: String) : void |
+| + atenderChamada() : void             |
+| + encerrarChamada() : void            |
++--------------------+
+
++----------------------+
+| NavegadorInternet    |
++----------------------+
+| + abrirPagina(url: String) : void |
+| + fecharPagina() : void           |
+| + atualizarPagina() : void        |
++----------------------+
+
+            ^
+            |
+            |
++----------------+
+|     Iphone     |
++----------------+
+| + reproduzirMusica(musica: String) : void |
+| + pausarMusica() : void                  |
+| + pararMusica() : void                   |
+| + fazerChamada(numero: String) : void    |
+| + atenderChamada() : void               |
+| + encerrarChamada() : void              |
+| + abrirPagina(url: String) : void       |
+| + fecharPagina() : void                 |
+| + atualizarPagina() : void              |
++----------------+
